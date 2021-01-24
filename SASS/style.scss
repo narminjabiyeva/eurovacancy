@@ -2,10 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
    
 }
 
@@ -18,218 +20,388 @@ $radius-btn: 6px;
 
 
 
-header {
-    padding: 25px 50px 25px 50px;
-    background-color: #38ada9;
-    
+.nav-container-fluid.sticky{
+    background-color: #071C40;
+}
 
-        nav{
+.nav-container-fluid{
+    width:100%;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    z-index: 99;
+   
 
-            .container-fluid{
-
-
-
-                .cv-launge{
-                     width: 350px;
-                    
-
-
-                    .dropdown{
-                        margin-right: 15px;
-
-                        .btn-toggle-color{
-                            background-color: #0278ae;
-                            color: white;
-                            transition: all 0.5s ease;
-
-                            &:hover{
-                                background-color: white;
-                                color: #0278ae;
-                                border:2px solid #0278ae;
-                            }
-                        }
+    .nav-row{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding: 0px 40px;
 
 
-                        .dropdown-menu{
-                             li{
-                                 a{
-                                     img{
-                                         margin-right: 2px;
-                                     }
-                                 }
-                             }
-                        }  
-                    }
 
-                    .add-Cv{
-                        .add-cv-item{
-                            text-decoration: none;
-                            background-color: #0278ae;
-                            color: white;
-                             transition: all 0.5s ease;
-                            &:hover{
-                                background-color: white;
-                                color: #0278ae;
-                                border:2px solid #0278ae;
-                            }
-                        }
-                        .heart-icon{
-                            display: flex;
-                            text-align: center;
-                            text-decoration: none;
-                        
-                            .heart-right {
-                                background-color: #0278ae;
-                                color: white;
-                                line-height: 20px;
-                                padding:10px;
-                                border-radius: 50%;
-                                transition: all 0.5s ease;
-                                &:hover{
-                                    background-color: white;
-                                    color: #0278ae;
-                                    border:2px solid #0278ae;
-                                }
-                       }
-                    }
 
+        .nav-col-1{
+            max-width: 150px;
+           
+
+            .nav-navbar-brand{
+                text-decoration: none;
+                color: white;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+
+                .nav-logo{
+                    width: 90px;
+                    height: 80px;
+                }
+
+
+                .nav-title-h1{
+                    font-size: 30px;
+                    align-self: center;
                 }
 
             }
         }
 
-    }
-}
 
+        /*.nav-col-2-active{
+            transform: translateX(100%);
+        }*/
 
-.container{
-    .text-center{
-        .newera{
-             text-decoration: none;
-             text-transform: uppercase;
-             background-color: #0278ae;
-             color: white;
-             transition: all 0.5s ease;
-             &:hover{
-                 background-color: white;
-                 color: #0278ae;
-                 border:2px solid #0278ae;
-            }
+        .nav-col-2.nav-col-2-bg{
+            background-color: #071C40;
         }
-    }
-}
 
+        .nav-col-2{
+            max-width: 500px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-self: center;
+        
 
-
-@media only screen and  (max-width: 720px){
-    header{
-
-
-        nav{
-
-            .container-fluid{
-
+            .dropdown{
+               
                 a{
-                     
+                    color: white;
+                    background-color: #0278ae;
+                    border: 1px solid #51adcf;
+                    border-radius: 5px;
                     font-weight: bold;
+                    transition: all 0.5s ease-in;
+
+                    &:hover{
+                        background-color: white;
+                        color: #071C40;
+                    }
                 }
-                
-                .cv-launge{
-                    width: 250px;
-                    margin-top: 15px;
 
-                    .dropdown{
 
-                        .btn-toggle-color{
-                            height: 30px;
-                            width: 80px;
-                            font-size: 12px;
+                .nav-dropdown-menu.dropdown{
+                    display: block;
+                }
+
+
+                .nav-dropdown-menu{
+                    position: absolute;
+                    padding: 5px;
+                    display: none;
+
+                    li{
+                        
+                        list-style: none;
+                        margin-top: 2px;
+
+                        a{
+                            
+                           img{
+                               margin-right: 3px;
+                           } 
                         }
                     }
-
-                    .add-Cv{
-                        .add-cv-item{
-                            width: 170px;
-                            height: 30px;
-                            padding: 5px 1px 0px 1px;
-                            margin-top: 5px;
-                            align-items: center;
-                            font-size: 12px;
-                            margin-right: 2px;
-
-                            i{
-                                font-size: 12px;
-                            }
-                        }
-
-                        .heart-icon{
-                            font-size: 12px;
-
-                            .heart-right{
-                                width: 30px;
-                                height: 30px;
-                                padding: 5px;
-                                margin-top: 5px;
-                            }
-                        }
-                    }
-
                 }
             }
+
+            .nav-addCv{
+                max-width: 450px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                margin-left: 10px;
+                
+
+
+                .nav-link-cv{
+                    width: 80%;
+                    text-decoration: none;
+                    color: white;
+                    background-color: #0278ae;
+                    border: 1px solid #51adcf;
+                    border-radius: 5px;
+                    padding: 5px;
+                    margin-right: 4px;
+                    transition: all 0.5s ease-in;
+
+                    &:hover{
+                        background-color: white;
+                        color: #071C40;
+                    }
+
+                    i{
+                        font-size: 14px;
+                    }
+
+                }
+
+                .nav-heart{
+                    position: relative;
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 50%;
+                    background-color: #0278ae;
+                    transition: all 0.5s ease-in;
+                    
+                    &:hover{
+                        background-color: white;
+                        color: #071C40;
+                    }
+
+                    &:hover .nav-heart-right{
+                        color: #071C40;
+                    }
+
+                    .nav-heart-right{
+                        position: absolute;
+                        color: white;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        transition: all 0.5s ease-in;
+                       
+                    }
+                }
+ 
+            }
+        }
+
+
+        .nav-col-3{
+            display: none;
         }
     }
 }
 
-@media only screen and  (max-width: 600px){
-   header{
-       nav{
-           .container-fluid{
 
-               a{
-                    font-size: 15px;
-                    font-weight: bold;
-                    img{
+@media only screen and  (max-width: 800px){
+    .nav-container-fluid{
+
+
+        .nav-row{
+
+            .nav-col-2.nav-col-2-active{
+                display: flex;
+            }
+
+            .nav-col-2{
+                padding: 15px 15px;
+                position: absolute;
+                width: 330px;
+                text-align: start;
+                top: 80px;
+                right: 0;
+                display: none;
+                
+            }
+
+
+            .nav-col-3{
+                display: block;
+                align-self: center;
+                position: relative;
+                padding: 0;
+              
+
+                i{
+                    font-size: 40px;
+                    cursor: pointer;
+                    color: whitesmoke;
+                }
+            }
+
+        }
+    }
+}
+
+@media only screen and  (max-width: 650px){
+    .nav-container-fluid{
+
+
+        .nav-row{
+            padding: 10px 20px;
+            padding-left: 5px;
+
+            .nav-col-1{
+                max-width: 100px;
+
+                .nav-navbar-brand{
+
+
+                    .nav-logo{
                         width: 50px;
                         height: 40px;
                     }
-               }
+
+                    .nav-title-h1{
+                        font-size: 14px;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            .nav-col-2{
+                width: 220px;
+                top: 60px;
+
+                .dropdown{
+                   
+                   
+                    a{
+                        height: 22px;
+                        padding: 3px;
+                        align-self: center;
+                        font-size: 10px;
+                        font-weight: 200;
+                    }
+
+                    .nav-dropdown-menu{
 
 
-               .cv-launge{
-                    width: 240px;
-                    margin-top: 15px;
-                    justify-content: none;
+                        li{
 
-                    .dropdown{
 
-                        .btn-toggle-color{
-                            height: 25px;
-                            width: 70px;
+
+                            .dropdown-item{
+
+
+                                img{
+                                    width: 15px;
+                                    height: 13px;
+                                    margin-right: 3px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .nav-addCv{
+                    height: 25px;
+
+                    .nav-link-cv{
+                        font-size: 10px;
+                        padding: 2px;
+                        align-self: center;
+
+                        i{
                             font-size: 10px;
                         }
                     }
 
-                    .add-Cv{
-                        .add-cv-item{
-                                width: 170px;
-                                height: 25px;
-                                font-size: 10px;
-                            i{
-                                
-                            }
-                        }
-                        .heart-icon{
-                            
-                            .heart-right{
+                    .nav-heart{
+                        width: 25px;
+                        height:25px ;
 
-                            }
+                        .nav-heart-right{
+                            font-size: 12px;
                         }
                     }
                 }
             }
+
+            .nav-col-3{
+
+
+                i{
+                    font-size: 30px;
+                }
+            }
         }
     }
-}           
+
+    .header-bg{
+
+        .container{
+
+
+            .img{
+
+                .newera{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+} 
+
+
+.header-bg{
+    position: relative;
+    height: 60vh;
+    background-color: #071C40;
+    margin-bottom: 0;
+    
+
+    .container{
+        height: 400px;
+        position: absolute;
+        padding: 145px 0px 0px 0px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        
+
+        .img{
+            width: 100%;
+            position: relative;
+            top: 0;
+            left: 0;
+
+            img{
+                width: 100%;
+                height: 200px;
+                border-radius: 10px;
+            }
+
+            .newera{
+                width: 80px;
+                color:white;
+                background-color: #071C40;
+                position: absolute;
+                top: 87%;
+                left: 50%;
+                transform: translate(-87%,-50%);
+                border-radius: 5px;
+                font-weight: bold;
+                transition: all 0.5s ease-in;
+
+
+                &:hover{
+                    background-color: white;
+                    color: #071C40;
+                    border: 2px solid #071C40;
+                }
+            }
+
+
+        }
+        
+    }
+}
 
 
 
@@ -245,10 +417,10 @@ a {
 
 
 .header-bottom {
-    background-color: #a5ecd7;
+    background-color: #071C40;
     padding: 20px;
     color: $color-white;
-
+    margin-top: 0;
 
     .bottom-link {
         color: $color-white;
@@ -261,6 +433,8 @@ a {
         }
     }
 }
+
+
 
 .search-box {
     -webkit-box-shadow: 0px 8px 14px -4px rgba(170, 170, 170, 1);

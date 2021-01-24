@@ -19,34 +19,47 @@
 
 <body>
 
-<header class="">
-	<div class="header-top container">
-		<div class="row">
-			<div class="col-lg-2 col-md-2 logo-img">
-				<img src="/IMG/logo.png" alt="">
-				<!--<span class="logoname">EUROVACANCY</span>-->
+	<nav class="nav-container-fluid">
+	<div class="nav-row">
+		<div class="nav-col-1">
+			 <a class="nav-navbar-brand" href="index.html">
+				<img class="nav-logo" src="/IMG/logo.png" alt="" width="30" height="24">
+				<h1 class="nav-title-h1">EUROVACANCY</h1>
+			 </a>
+		</div>
+		<div class="nav-col-2" id="nav-col-2">
+			<div class="dropdown">
+			  <a class="btn dropdown-toggle" onclick="DropDown()">
+			    Dil Secimi
+			  </a>
+		  
+			  <ul class="nav-dropdown-menu">
+				  	<li><a class="dropdown-item" href="#"><img src="/IMG/azerbaijan.png" width="20" height="18">Azerbaijan</a></li>
+					<li><a class="dropdown-item" href="#"><img src="/IMG/russia.png" width="20" height="18">Rusian</a></li>
+					<li><a class="dropdown-item" href="#"><img src="/IMG/united-kingdom.png" width="20" height="18">English</a></li>
+			  </ul>
 			</div>
-			<div class="col-lg-7 col-md-12 col-sm-12 col-12">
-				<div class="flex-img">
-					<a href="reklam.html" target="_blank"><img src="/IMG/reklam.jpeg" alt=""></a>
-				</div>
-			</div>
-			<div class="col-lg-2 col-md-6 col-sm-6 col-4 logo-img-mobile">
-				<img src="/IMG/logo.png" alt="">
-				<!--<span class="logoname">EUROVACANCY</span>-->
-			</div>
-			<div class="col-lg-3 col-md-6 col-sm-6 col-8 header-top-right">
-				<a href="add-cv.html" class="link-cv"><i class="fas fa-plus"></i> CV yerləşdir</a>
-				<a href="favourite.html"><i class="fas fa-heart heart-right"></i></a>
+			<div class="nav-addCv">
+				<a href="add-cv.html" class="nav-link-cv"><i class="fas fa-plus"></i> CV yerləşdir</a>
+				<a href="favorite.html" class="nav-heart"><i class="fas fa-heart nav-heart-right"></i></a>
 			</div>
 		</div>
-	</div>
-	<div class="header-bottom">
-		<div class="container">
-			<a href="/" class="bottom-link">Ana Səhifə</a> /
-			<a href="all-rules.html" class="bottom-link">CV əlavə edin</a>
+		<div class="nav-col-3" onclick="Burger()">
+			<i id="nav-bars" class="fas fa-bars"></i></div>
 		</div>
 	</div>
+</nav>
+
+
+
+<header class="container-fluid header-bg">
+	<div class="container">
+	<div class="img">
+		<img src="/IMG/reklam.jpeg"/>
+		<a class="btn w-25 m-auto newera" href="http://newera.az/"  target="_blank">Newera</a>
+	</div>
+	
+</div>
 </header>
 	<main>
 		<section>
@@ -185,4 +198,5 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script src="/JS/script.js"></script>
+	<script src="/JS/navbar.js"></script>
 </body></html>

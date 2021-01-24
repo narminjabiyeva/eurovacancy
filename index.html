@@ -15,6 +15,7 @@
 	<!-- Bootstrap 5-->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 	<link href="/SASS/bootstrap.min.css">
+
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="/SASS/style.css">
@@ -48,47 +49,87 @@
 		</div>
 	</header>-->
 
-	<header class="container-fluid header-bg">
 
-		<nav class="navbar navbar-light">
-			 <div class="container-fluid">
-			   <a class="d-flex navbar-brand text-light align-items-center" href="index.html">
- 			     <img src="/IMG/logo.png" alt="" width="80" height="70" class="d-inline-block align-top">
- 			     EUROVACANCY
- 			   </a>
-			  
-				
-			     <div class="d-flex flex-row cv-launge">
+<nav class="nav-container-fluid">
 
-					<div class="dropdown  mr-3">
-					  <a class="btn mt-1 dropdown-toggle btn-toggle-color" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-					    Dil Secimi
-					  </a>
-				  
-					  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-						  	<li><a class="dropdown-item" href="#"><img src="/IMG/azerbaijan.png" width="20" height="18">Azerbaijan</a></li>
-							<li><a class="dropdown-item" href="#"><img src="/IMG/russia.png" width="20" height="18">Rusian</a></li>
-							<li><a class="dropdown-item" href="#"><img src="/IMG/united-kingdom.png" width="20" height="18">English</a></li>
-					  </ul>
-					</div>
-
-					<div class="d-flex justify-content-between w-50 add-Cv">
-						<a href="add-cv.html" class="btn add-cv-item"><i class="fas fa-plus"></i> CV yerləşdir</a>
-						<a href="favorite.html" class="heart-icon"><i class="fas fa-heart heart-right"></i></a>
-					</div>
-			   </div>
-			 </div>
-		</nav>
-
-		<div class="container">
-			<div class="row text-center">
-				<div class="flex-img">
-					<img src="/IMG/reklam.jpeg" alt="">
-				</div>
-				<a class="btn w-25 m-auto newera" href="http://newera.az/"  target="_blank">Newera</a>
-			</div>
+	<div class="nav-row">
+		<div class="nav-col-1">
+			 <a class="nav-navbar-brand" href="#">
+				<img class="nav-logo" src="/IMG/logo.png" alt="" width="30" height="24">
+				<h1 class="nav-title-h1">EUROVACANCY</h1>
+			 </a>
 		</div>
-	</header>
+
+
+
+
+		<div class="nav-col-2" id="nav-col-2">
+
+			<div class="dropdown">
+			  <a class="btn dropdown-toggle" onclick="DropDown()">
+			    Dil Secimi
+			  </a>
+		  
+			  <ul class="nav-dropdown-menu">
+				  	<li><a class="dropdown-item" href="#"><img src="/IMG/azerbaijan.png" width="20" height="18">Azerbaijan</a></li>
+					<li><a class="dropdown-item" href="#"><img src="/IMG/russia.png" width="20" height="18">Rusian</a></li>
+					<li><a class="dropdown-item" href="#"><img src="/IMG/united-kingdom.png" width="20" height="18">English</a></li>
+			  </ul>
+			</div>
+
+			<div class="nav-addCv">
+				<a href="add-cv.html" class="nav-link-cv"><i class="fas fa-plus"></i> CV yerləşdir</a>
+				<a href="favorite.html" class="nav-heart"><i class="fas fa-heart nav-heart-right"></i></a>
+			</div>
+
+		</div>
+
+
+		<div class="nav-col-3" onclick="Burger()">
+			<i id="nav-bars" class="fas fa-bars"></i></div>
+		</div>
+	</div>
+</nav>
+
+
+<header class="container-fluid header-bg">
+	<!--
+	<nav class="navbar navbar-light">
+		 <div class="container-fluid">
+		   <a class="d-flex navbar-brand text-light align-items-center" href="index.html">
+		     <img src="/IMG/logo.png" alt="" width="80" height="70" class="d-inline-block align-top">
+		     EUROVACANCY
+		   </a>
+		  
+			
+		     <div class="d-flex flex-row cv-launge">
+				<div class="dropdown  mr-2">
+				  <a class="btn mt-1 dropdown-toggle btn-toggle-color" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+				    Dil Secimi
+				  </a>
+			  
+				  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+					  	<li><a class="dropdown-item" href="#"><img src="/IMG/azerbaijan.png" width="20" height="18">Azerbaijan</a></li>
+						<li><a class="dropdown-item" href="#"><img src="/IMG/russia.png" width="20" height="18">Rusian</a></li>
+						<li><a class="dropdown-item" href="#"><img src="/IMG/united-kingdom.png" width="20" height="18">English</a></li>
+				  </ul>
+				</div>
+				<div class="d-flex justify-content-between w-50 add-Cv">
+					<a href="add-cv.html" class="btn add-cv-item"><i class="fas fa-plus"></i> CV yerləşdir</a>
+					<a href="favorite.html" class="heart-icon"><i class="fas fa-heart heart-right"></i></a>
+				</div>
+		   </div>
+		 </div>
+	</nav>
+	-->
+	<div class="container">
+		<div class="img">
+			<img src="/IMG/reklam.jpeg"/>
+			<a class="btn w-25 m-auto newera" href="http://newera.az/"  target="_blank">Newera</a>
+		</div>
+		
+	</div>
+</header>
 
 
 	<main>
@@ -96,8 +137,8 @@
 			<h1 class="site-h2">
 				<div class="header-bottom">
 					<div class="container">
-						<a href="http://eurovacancy.az" class="bottom-link">Ana Səhifə</a> /
-						<a href="http://eurovacancy.az/allvacancies" class="bottom-link">Bütün Vakansiyalar</a>
+						<a href="index.html" class="bottom-link">Ana Səhifə</a>
+						<a href="all-vacancies.html" class="bottom-link">Bütün Vakansiyalar</a>
 					</div>
 				</div>
 			</h1>
@@ -106,32 +147,32 @@
 					<div class="row">
 						<div class="col-md-3 col-sm-6 col-6">
 							<ul>
-								<li><a href="http://eurovacancy.az/vacancy/18">Usta<span>5</span></a></li>
+								<li><a href="vacancy-category.html">Usta<span>5</span></a></li>
 							</ul>
 						</div>
 						<div class="col-md-3 col-sm-6 col-6">
 							<ul>
-								<li><a href="http://eurovacancy.az/vacancy/19">Qaynaqçı<span>3</span></a></li>
+								<li><a href="vacancy-category.html">Qaynaqçı<span>3</span></a></li>
 							</ul>
 						</div>
 						<div class="col-md-3 col-sm-6 col-6">
 							<ul>
-								<li><a href="http://eurovacancy.az/vacancy/20">Sahə işçisi<span>1</span></a></li>
+								<li><a href="vacancy-category.html">Sahə işçisi<span>1</span></a></li>
 							</ul>
 						</div>
 						<div class="col-md-3 col-sm-6 col-6">
 							<ul>
-								<li><a href="http://eurovacancy.az/vacancy/21">İstixana İşçisi<span>1</span></a></li>
+								<li><a href="vacancy-category.html">İstixana İşçisi<span>1</span></a></li>
 							</ul>
 						</div>
 						<div class="col-md-3 col-sm-6 col-6">
 							<ul>
-								<li><a href="http://eurovacancy.az/vacancy/22">Toyuq Kombinatı<span>1</span></a></li>
+								<li><a href="vacancy-category.html">Toyuq Kombinatı<span>1</span></a></li>
 							</ul>
 						</div>
 						<div class="col-md-3 col-sm-6 col-6">
 							<ul>
-								<li><a href="http://eurovacancy.az/vacancy/24">Qənnadı İstehsalı<span>1</span></a></li>
+								<li><a href="vacancy-category.html">Qənnadı İstehsalı<span>1</span></a></li>
 							</ul>
 						</div>
 					</div>
@@ -144,7 +185,7 @@
 						</div>
 						<div class="etrafli-axtaris">
 							<span class="cross-right"><i class="fas fa-times"></i></span>
-							<form action="http://eurovacancy.az" method="POST" enctype="multipart/form-data">
+							<form action="" method="POST" enctype="multipart/form-data">
 								<input type="hidden" name="_token" value="egBPQubtH4HEgtK3GcGqMiJ8ys4puMjt27bD8poy">
 								<div class="row">
 									<div class="col-md-11 filter_page_filter main_page_filter_inputs p-0">
@@ -286,7 +327,7 @@
     <section>
         <div class="container">
             <div class="flex-img">
-                <a href="http://newera.az/" target="_blank"><img src="http://eurovacancy.az/front/IMG/reklam.jpeg" alt=""></a>
+                <a href="http://newera.az/" target="_blank"><img src="/front/IMG/reklam.jpeg" alt=""></a>
             </div>
         </div>
     </section>
@@ -315,7 +356,7 @@
 										</div>
 										<div class="col-lg-3 col-md-3 col-sm-3 col-3 box-btn">
 											<i class="fas fa-heart heart-second" id=""></i><br>
-											<a href="http://eurovacancy.az/vacancy_more/30">Ətraflı</a>
+											<a href="vacancy-category.html">Ətraflı</a>
 										</div>
 									</div>
 								</div>
@@ -330,7 +371,7 @@
 										</div>
 										<div class="col-lg-3 col-md-3 col-sm-3 col-3 box-btn">
 											<i class="fas fa-heart heart-second" id=""></i><br>
-											<a href="http://eurovacancy.az/vacancy_more/29">Ətraflı</a>
+											<a href="vacancy-category.html">Ətraflı</a>
 										</div>
 									</div>
 								</div>
@@ -345,7 +386,7 @@
 										</div>
 										<div class="col-lg-3 col-md-3 col-sm-3 col-3 box-btn">
 											<i class="fas fa-heart heart-second" id=""></i><br>
-											<a href="http://eurovacancy.az/vacancy_more/28">Ətraflı</a>
+											<a href="vacancy-category.html">Ətraflı</a>
 										</div>
 									</div>
 								</div>
@@ -360,7 +401,7 @@
 										</div>
 										<div class="col-lg-3 col-md-3 col-sm-3 col-3 box-btn">
 											<i class="fas fa-heart heart-second" id=""></i><br>
-											<a href="http://eurovacancy.az/vacancy_more/27">Ətraflı</a>
+											<a href="vacancy-category.html">Ətraflı</a>
 										</div>
 									</div>
 								</div>
@@ -375,7 +416,7 @@
 										</div>
 										<div class="col-lg-3 col-md-3 col-sm-3 col-3 box-btn">
 											<i class="fas fa-heart heart-second" id=""></i><br>
-											<a href="http://eurovacancy.az/vacancy_more/26">Ətraflı</a>
+											<a href="vacancy-category.html">Ətraflı</a>
 										</div>
 									</div>
 								</div>
@@ -390,7 +431,7 @@
 										</div>
 										<div class="col-lg-3 col-md-3 col-sm-3 col-3 box-btn">
 											<i class="fas fa-heart heart-second" id=""></i><br>
-											<a href="http://eurovacancy.az/vacancy_more/25">Ətraflı</a>
+											<a href="vacancy-category.html">Ətraflı</a>
 										</div>
 									</div>
 								</div>
@@ -399,7 +440,7 @@
 						</div>
 
 						<div class="button-box">
-							<a href="http://eurovacancy.az/allvacancies">Bütün Vakansiyalar</a>
+							<a href="vacancy-category.html">Bütün Vakansiyalar</a>
 						</div>
 					</div>
 					<div id="tab2" class="tab-content hide">
@@ -407,7 +448,7 @@
 						</div>
 
 						<div class="button-box">
-							<a href="http://eurovacancy.az/allvacancies">Bütün Vakansiyalar</a>
+							<a href="vacancy-category.html">Bütün Vakansiyalar</a>
 						</div>
 					</div>
 					<div id="tab3" class="tab-content hide">
@@ -415,7 +456,7 @@
 						</div>
 
 						<div class="button-box">
-							<a href="http://eurovacancy.az/allvacancies">Bütün Vakansiyalar</a>
+							<a href="vacancy-category.html">Bütün Vakansiyalar</a>
 						</div>
 					</div>
 					<div id="tab4" class="tab-content hide">
@@ -423,7 +464,7 @@
 						</div>
 
 						<div class="button-box">
-							<a href="http://eurovacancy.az/allvacancies">Bütün Vakansiyalar</a>
+							<a href="vacancy-category.html">Bütün Vakansiyalar</a>
 						</div>
 					</div>
 					<div id="tab5" class="tab-content hide">
@@ -439,7 +480,7 @@
 										</div>
 										<div class="col-lg-3 col-md-3 col-sm-3 col-3 box-btn">
 											<i class="fas fa-heart heart-second" id=""></i><br>
-											<a href="http://eurovacancy.az/vacancy_more/30">Ətraflı</a>
+											<a href="vacancy-category.html">Ətraflı</a>
 										</div>
 									</div>
 								</div>
@@ -455,7 +496,7 @@
 										</div>
 										<div class="col-lg-3 col-md-3 col-sm-3 col-3 box-btn">
 											<i class="fas fa-heart heart-second" id=""></i><br>
-											<a href="http://eurovacancy.az/vacancy_more/29">Ətraflı</a>
+											<a href="vacancy-category.html">Ətraflı</a>
 										</div>
 									</div>
 								</div>
@@ -471,7 +512,7 @@
 										</div>
 										<div class="col-lg-3 col-md-3 col-sm-3 col-3 box-btn">
 											<i class="fas fa-heart heart-second" id=""></i><br>
-											<a href="http://eurovacancy.az/vacancy_more/28">Ətraflı</a>
+											<a href="vacancy-category.html">Ətraflı</a>
 										</div>
 									</div>
 								</div>
@@ -487,7 +528,7 @@
 										</div>
 										<div class="col-lg-3 col-md-3 col-sm-3 col-3 box-btn">
 											<i class="fas fa-heart heart-second" id=""></i><br>
-											<a href="http://eurovacancy.az/vacancy_more/27">Ətraflı</a>
+											<a href="vacancy-category.html">Ətraflı</a>
 										</div>
 									</div>
 								</div>
@@ -503,7 +544,7 @@
 										</div>
 										<div class="col-lg-3 col-md-3 col-sm-3 col-3 box-btn">
 											<i class="fas fa-heart heart-second" id=""></i><br>
-											<a href="http://eurovacancy.az/vacancy_more/26">Ətraflı</a>
+											<a href="vacancy-category.html">Ətraflı</a>
 										</div>
 									</div>
 								</div>
@@ -519,7 +560,7 @@
 										</div>
 										<div class="col-lg-3 col-md-3 col-sm-3 col-3 box-btn">
 											<i class="fas fa-heart heart-second" id=""></i><br>
-											<a href="http://eurovacancy.az/vacancy_more/25">Ətraflı</a>
+											<a href="vacancy-category.html">Ətraflı</a>
 										</div>
 									</div>
 								</div>
@@ -527,7 +568,7 @@
 						</div>
 
 						<div class="button-box">
-							<a href="http://eurovacancy.az/allvacancies">Bütün Vakansiyalar</a>
+							<a href="vacancy-category.html">Bütün Vakansiyalar</a>
 						</div>
 					</div>
 
@@ -539,33 +580,33 @@
 					<div class="row">
 						<div class="col-lg-4 col-md-6 col-sm-6 col-12">
 							<div class="blog-box">
-								<div class="blog-img"><img src="http://eurovacancy.az/images/backend/blog/large/72194.jpg" alt=""></div>
+								<div class="blog-img"><img src="/images/backend/blog/large/72194.jpg" alt=""></div>
 
 								<div class="blog-text">
 									<h4 class="claimedRight" maxlength="50">Milli vizası üçün müraciət etmək istəyirəm (D növü)</h4>
-									<a href="http://eurovacancy.az/single_blog/4">Ətarflı <i class="fas fa-arrow-right"></i></a>
+									<a href="/single_blog/4">Ətarflı <i class="fas fa-arrow-right"></i></a>
 									<span><i class="far fa-clock"></i>4 noyabr 2020</span>
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-6 col-sm-6 col-12">
 							<div class="blog-box">
-								<div class="blog-img"><img src="http://eurovacancy.az/images/backend/blog/large/22764.jpg" alt=""></div>
+								<div class="blog-img"><img src="/images/backend/blog/large/22764.jpg" alt=""></div>
 
 								<div class="blog-text">
 									<h4 class="claimedRight" maxlength="50">Viza müraciətlərin qəbulu bərpası haqqında məlumat</h4>
-									<a href="http://eurovacancy.az/single_blog/9">Ətarflı <i class="fas fa-arrow-right"></i></a>
+									<a href="/single_blog/9">Ətarflı <i class="fas fa-arrow-right"></i></a>
 									<span><i class="far fa-clock"></i>29.12.2020</span>
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-6 col-sm-6 col-12">
 							<div class="blog-box">
-								<div class="blog-img"><img src="http://eurovacancy.az/images/backend/blog/large/50347.jpg" alt=""></div>
+								<div class="blog-img"><img src="/images/backend/blog/large/50347.jpg" alt=""></div>
 
 								<div class="blog-text">
 									<h4 class="claimedRight" maxlength="50">Viza məsələləri - ümumi məlumat</h4>
-									<a href="http://eurovacancy.az/single_blog/10">Ətarflı <i class="fas fa-arrow-right"></i></a>
+									<a href="/single_blog/10">Ətarflı <i class="fas fa-arrow-right"></i></a>
 									<span><i class="far fa-clock"></i>29.12.2020</span>
 								</div>
 							</div>
@@ -573,7 +614,7 @@
 
 					</div>
 					<div class="button-box">
-						<a href="http://eurovacancy.az/blog">Hamısına bax</a>
+						<a href="/blog">Hamısına bax</a>
 					</div>
 				</div>
 			</section>
@@ -598,7 +639,7 @@
 						</li>
 
 						<li>
-							<a href="whatsapp://send?text=http://eurovacancy.az/" data-action="share/whatsapp/share" target="_blank" class="entypo-gplus">
+							<a href="whatsapp://send?text=/" data-action="share/whatsapp/share" target="_blank" class="entypo-gplus">
 								<i class="fab fa-whatsapp"></i>
 								<span>Paylaş!</span>
 							</a>
@@ -624,25 +665,25 @@
 							<div class="col-md-3 col-sm-6 col-12">
 								<ul>
 									<h4>eurovacancy.az</h4>
-									<li><a href="http://eurovacancy.az/blog">Blog</a></li>
-									<li><a href="http://eurovacancy.az/advertisements">Saytda reklam və ya elan</a></li>
-									<li><a href="http://eurovacancy.az/rules">Qaydalar</a></li>
+									<li><a href="blog.html">Blog</a></li>
+									<li><a href="reklam.html">Saytda reklam və ya elan</a></li>
+									<li><a href="all-rules.html">Qaydalar</a></li>
 								</ul>
 							</div>
 							<div class="col-md-3 col-sm-6 col-12">
 								<ul>
 									<h4>Elanlar</h4>
-									<li><a href="http://eurovacancy.az/allvacancies">Bütün vakansiyalar</a></li>
-									<li><a href="http://eurovacancy.az/addCV">CV yerləşdir</a></li>
+									<li><a href="all-vacancies.html">Bütün vakansiyalar</a></li>
+									<li><a href="add-cv.html">CV yerləşdir</a></li>
 								</ul>
 							</div>
 							<div class="col-md-3 col-sm-6 col-12">
 								<ul>
 									<h4>Elan Növləri</h4>
-									<li><a href="http://eurovacancy.az/full">Full-time işlər</a></li>
-									<li><a href="http://eurovacancy.az/part">Part-time işlər</a></li>
-									<li><a href="http://eurovacancy.az/free">Frilans işlər</a></li>
-									<li><a href="http://eurovacancy.az/intern">Təcrübə Proqramı</a></li>
+									<li><a href="/full">Full-time işlər</a></li>
+									<li><a href="/part">Part-time işlər</a></li>
+									<li><a href="/free">Frilans işlər</a></li>
+									<li><a href="/intern">Təcrübə Proqramı</a></li>
 								</ul>
 							</div>
 							<div class="col-md-3 col-sm-6 col-12">
@@ -674,15 +715,18 @@
 			</footer>
 		</main>
 		
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-		<!--    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>-->
+		<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>-->
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>-->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 		<script src="/JS/bootstrap.bundle.min.js"></script>
+		
 		<script src="/JS/bootstrap.min.js"></script>
 
 
 		<script src="/JS/script.js"></script>
+		<script src="/JS/navbar.js"></script>
+
 </body></html>
