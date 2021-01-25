@@ -22,6 +22,7 @@ $(document).ready(function () {
     });
 })
 
+
 $(document).ready(function () {
     $(document).on('click', '.heart-right', function () {
         $(this).toggleClass('heart-fav');
@@ -30,6 +31,8 @@ $(document).ready(function () {
         $(this).toggleClass('heart-first');
     })
 })
+
+
 $(document).ready(function () {
     $('.apply').on('click', function () {
         $('.apply-box').toggle();

@@ -32,3 +32,31 @@ const BurgerMenu = () => {
 	});
 };
 BurgerMenu();
+
+
+
+$(document).ready(function () {
+	$('.claimedRight-2').each(function (f) {
+		var newstr = $(this).text().substring(0, 89);
+		$(this).text(newstr);
+	});
+})
+
+
+$(document).ready(function () {
+	$('.claimedRight-3').each(function (f) {
+		var newp = $(this).text().substring(0, 35);
+		$(this).text(newp);
+	});
+})
+
+
+
+$(document).ready(function () {
+	$(document).on('click', '.heart-right', function () {
+		$(this).toggleClass('heart-fav');
+	})
+	$(document).on('click', '.heart-second-1', function () {
+		$(this).toggleClass('heart-first');
+	})
+})
