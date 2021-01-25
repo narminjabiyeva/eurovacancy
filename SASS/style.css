@@ -168,7 +168,7 @@ body {
         align-self: center;
     position: relative;
     padding: 0; }
-    .nav-container-fluid .nav-row .nav-col-3 i {
+    .nav-container-fluid .nav-row .nav-col-3 .fa-bars {
       font-size: 40px;
       cursor: pointer;
       color: whitesmoke; } }
@@ -179,8 +179,8 @@ body {
     .nav-container-fluid .nav-row .nav-col-1 {
       max-width: 100px; }
       .nav-container-fluid .nav-row .nav-col-1 .nav-navbar-brand .nav-logo {
-        width: 50px;
-        height: 40px; }
+        width: 70px;
+        height: 60px; }
       .nav-container-fluid .nav-row .nav-col-1 .nav-navbar-brand .nav-title-h1 {
         font-size: 14px;
         font-weight: bold; }
