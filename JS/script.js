@@ -71,3 +71,11 @@ $(document).ready(function () {
         $(target_tab_selector).addClass('active');
     });
 });
+
+$(document).ready(function() {
+    $('#share').on('click', function () {
+        $('#social-sidebar > ul > li').toggle().slideToggle(250);
+
+    })
+    
+})

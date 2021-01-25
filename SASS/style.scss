@@ -480,6 +480,7 @@ $radius-btn: 6px;
 
 
 a {
+    text-decoration: none;
     &:hover {
         text-decoration: none;
     }
@@ -583,6 +584,7 @@ a {
 
             a {
                 color: #000;
+                text-decoration: none;
 
                 span {
                     margin: auto 10px;
@@ -1312,8 +1314,24 @@ footer {
 	margin-top: -75px;
 	position: fixed;
 	top: 50%;
-	z-index: 9999;
-	li {
+    z-index: 9999;
+    
+    #share {
+        background-color: #0278ae;
+        color: #fff;
+        height: 50px;
+        font-size: 18px;
+        line-height: 50px;
+        position: relative;
+        text-align: center;
+        width: 50px;
+        display: none;
+    }
+    ul {
+        list-style: none;
+        padding-left: 0;
+        li {
+        
 		&:first-child {
 			a {
 				border-radius: 0 5px 0 0;
@@ -1325,6 +1343,8 @@ footer {
 			}
 		}
 	}
+    }
+	
 	a {
 		background: #121212;
 		color: #fff;
@@ -1438,6 +1458,27 @@ footer {
 		}
 	}
 }
+
+@media screen and (max-width: 575px) {
+    #social-sidebar {
+        #share {
+            display: block;
+        }
+        
+         ul {
+
+            &li{
+            display:none;
+            &:first-child {
+                display: block;
+        
+            }
+        } 
+         } 
+         
+                
+    }
+  }
 
 
 
